@@ -59,6 +59,19 @@ Open up the Microsoft Edge browser on the desktop and open up this [GitHub Repo]
 
 Click on this [link](https://adb-7605877979396497.17.azuredatabricks.net/) to access the Databricks environment for the workshop
 
+When the sign in pops up click Sign in with Azure AD
 
+![signinwithaad](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/signinwithaad.png)
 
+You may be prompted for multifactor auth.  Check with your instructor.
+
+Your Azure Databricks Screen will look like this
+
+![adbscreen](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/adbscreen.png)
+
+In like the new UI so you might want to click the Enable new UI toggle
+
+We will review the items available on the left nav panel
+
+![reviewleftnavitems](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/reviewleftnavitems.png)
 
