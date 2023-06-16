@@ -82,6 +82,7 @@ For the workshop today we will focus on:
     - Compute
     - SQL Editor
     - SQL Warehouses
+    - Partner Connect
 
 ## Step 2 Data Engineering
 
@@ -152,3 +153,49 @@ example would be usereighteen
 When you complete running the each cell there should be delta tables in the Data section of the Leftnav
 
 ![data](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/data.png)
+
+## Step 3 Data Analysis
+
+Navigate to the SQL Editor in the Left Nav
+
+![sqleditor](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/sqleditor.png)
+
+Run some queries.  Here is a sample query
+
+```
+SELECT * FROM cms.datedimuserone1
+```
+
+Now lets try to access these delta tables in Power BI desktop
+
+Navigate to Partner Connect in the Left Nav
+and click on Setup Power BI Desktop
+
+![partnerconnect](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/partnerconnect.png)
+
+Click on Download connection file
+
+![downloadconnectionfile](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/downloadconnectionfile.png)
+
+Click on openfile
+
+![openfile](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/openfile.png)
+
+Click on Sign in and enter your username and password.  Then click Connect
+
+![aadsignin](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/aadsignin.png)
+
+Select your tables and click Load
+
+![loadpbi](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loadpbi.png)
+
+Create the joins in your model
+
+![joins](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/joins.png)
+
+Start Building a Power BI Report
+
+![pbireport](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/pbireport.png)
+
+## Step 4 Introducing Microsoft Fabric
+
