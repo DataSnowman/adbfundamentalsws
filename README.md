@@ -75,3 +75,39 @@ We will review the items available on the left nav panel
 
 ![reviewleftnavitems](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/reviewleftnavitems.png)
 
+For the workshop today we will focus on:
+
+    - Workspace
+    - Data
+    - Compute
+    - SQL Editor
+    - SQL Warehouses
+
+## Step 2 Data Engineering
+
+During this section of the workshop we will focus on reviewing and looking at a couple of Databricks Notebooks and using them for Data Engineering
+
+To start this please clone or download a zip of the GitHub Repo we are using in the workshop
+
+![clone](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/clone.png)
+
+Git is installed on the VM so you can open a command prompt and paste in the following:
+
+```
+https://github.com/DataSnowman/adbfundamentalsws.git
+
+```
+
+Go into your Workspace in Databricks and navigate to the three dots to the right of your username and select import
+
+![import](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/import.png)
+
+Click on browse and navigate to where you cloned or downloaded the zip of the repo and select the users.dbc file and click open
+
+![usersdbc](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/usersdbc.png)
+
+Click Import
+
+![clickimport](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/clickimport.png)
+
+
