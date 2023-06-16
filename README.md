@@ -29,3 +29,36 @@ Click on the stopped toggle on the VM to start your VM
 
 ![startingvm](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/startingvm.png)
 
+Once it says that it is Running click on the icon that looks like a monitor
+
+![runningvm](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/runningvm.png)
+
+Keep the download
+
+![keep](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/keep.png)
+
+Open the RDP file and click Connect
+
+![openrdp](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/openrdp.png)
+
+Enter the password provided by your instructor and click OK
+
+![vmok](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/vmok.png)
+
+Click Yes
+
+![yes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/yes.png)
+
+Your Windows desktop should look like this
+
+![win11desktop](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/win11desktop.png)
+
+Open up the Microsoft Edge browser on the desktop and open up this [GitHub Repo](https://github.com/DataSnowman/adbfundamentalsws) to follow the rest of the directions from that remote desktop
+
+![gitrepo](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/gitrepo.png)
+
+Click on this [link](https://adb-7605877979396497.17.azuredatabricks.net/) to access the Databricks environment for the workshop
+
+
+
+
