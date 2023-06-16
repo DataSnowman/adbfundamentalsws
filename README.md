@@ -110,4 +110,45 @@ Click Import
 
 ![clickimport](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/clickimport.png)
 
+Open the users file and you should see these two notebooks
 
+![notobooks](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/notobooks.png)
+
+Open the first notebook LoadCMSFiles
+
+![loadcmsfiles](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loadcmsfiles.png)
+
+In the first cell modify the uncomment (remove the #) last item so it is your username
+
+user = "<yourusername>"
+
+example would be usereighteen
+
+![moduser](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/moduser.png)
+
+`IMPORTANT` Let review what is going on in the notebook and please run one cell at a time
+
+Before you run anything you need to attach the notebook to the cluster.  Find the WorkshopNIS cluster and click Attach
+
+![attach](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/attach.png)
+
+When you complete running the each cell there should be delta tables in the Data section of the Leftnav
+
+![data](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/data.png)
+
+
+Open the second notebook LoadGoldSchema
+
+![loadgoldschema](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loadgoldschema.png)
+
+As in the other notebook, in the first cell modify the uncomment (remove the #) last item so it is your username
+
+user = "<yourusername>"
+
+example would be usereighteen
+
+`IMPORTANT` Let review what is going on in the notebook and please run one cell at a time
+
+When you complete running the each cell there should be delta tables in the Data section of the Leftnav
+
+![data](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/data.png)
