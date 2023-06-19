@@ -240,6 +240,8 @@ I called mine workshop
 
 ![workspace](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/workspace.png)
 
+### Create a Lakehouse
+
 Create a Lakehouse by clicking on +New and chosing Lakehouse. Lakehouse (Preview) while still in public preview
 
 ![lakehouse](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/lakehouse.png)
@@ -302,4 +304,6 @@ Now create shortcuts for the data and drg tables using the same process.  The St
 You now should have the following 3 tables in your Lakehouse:
 
 ![goldschema](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/goldschema.png)
+
+### Explore the Warehouse SQL Endpoint
 
