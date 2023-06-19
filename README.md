@@ -137,6 +137,13 @@ When you complete running the each cell there should be delta tables in the Data
 
 ![data](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/data.png)
 
+Check your Storage accounts to find the input source data in Bronze
+
+![bronze](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/bronze.png)
+
+The output of the notebook will be in Silver
+
+![silver](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/silver.png)
 
 Open the second notebook LoadGoldSchema
 
@@ -153,6 +160,14 @@ example would be usereighteen
 When you complete running the each cell there should be delta tables in the Data section of the Leftnav
 
 ![data](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/data.png)
+
+Check your Storage accounts to find the input source data in Silver
+
+![silver](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/silver.png)
+
+The output of the notebook will be in gold folder in the Silver container
+
+![gold](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/gold.png)
 
 ## Step 3 Data Analysis
 
@@ -198,4 +213,93 @@ Start Building a Power BI Report
 ![pbireport](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/pbireport.png)
 
 ## Step 4 Introducing Microsoft Fabric
+
+Now we are going to connect to the Delta tables we just created in the workshop by creating a Shortcut to the Delta files in Azure Data Lake Storage Gen2 using Microsoft Fabric.
+
+Login to Microsoft Fabric in you browser on your lab services VM by opening another tab by clicking on the following link [Microsoft Fabric](https://fabric.microsoft.com/).  Here is the link if you need to cut and paste it into the browser
+
+```
+https://fabric.microsoft.com/
+```
+
+![fabrichome](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/fabrichome.png)
+
+Click on Synapse Data Engineering
+
+![synapsede](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/synapsede.png)
+
+Create a workspace if one is not already created.  Click on Workspaces on the left nav.
+
+![workspaces](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/workspaces.png)
+
+Click on +New workspace which opens a dialog. 
+
+![newws](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/newws.png)
+
+I called mine workshop
+
+![workspace](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/workspace.png)
+
+Create a Lakehouse by clicking on +New and chosing Lakehouse. Lakehouse (Preview) while still in public preview
+
+![lakehouse](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/lakehouse.png)
+
+I called mine `medicare`.  Click Create
+
+![medicare](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/medicare.png)
+
+Click on New shortcut
+
+![newsc](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/newsc.png)
+
+Click on Azure Data Lake Storage Gen2
+
+![adls](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/adls.png)
+
+Now you need to create a connection string
+
+![constring](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/constring.png)
+
+Go back to Azure Storage Explorer and find your gold schema
+
+![goldtables](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/goldtables.png)
+
+Right click on a folder and scroll down to properties and select properties
+
+![props](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/props.png)
+
+Select the DFS URL
+
+![dfs](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/dfs.png)
+
+It should look something like this:
+
+```
+https://fabaccelerla3wfpqdmcv7c.dfs.core.windows.net/silver/cms/MedicareInpatientHospitalsByProviderAndService/userone1/gold/medicareinpatientfact
+```
+For the URL enter just the storage account
+
+```
+https://fabaccelerla3wfpqdmcv7c.dfs.core.windows.net
+```
+Then click Next
+
+![url](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/url.png)
+
+In the Shortcut setting enter the Shortcut name (the name of the folder which represents the delta table for example) and the Subpath.  Something like this:
+
+```
+/silver/cms/MedicareInpatientHospitalsByProviderAndService/userone1/gold/medicareinpatientfact
+```
+The path for your folder will vary
+
+![scname](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/scname.png)
+
+Click Create
+
+Now create shortcuts for the data and drg tables using the same process.  The Storage URL will be the same as above and the Subpath will just need the last folder name changed.
+
+You now should have the following 3 tables in your Lakehouse:
+
+![goldschema](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/goldschema.png)
 
