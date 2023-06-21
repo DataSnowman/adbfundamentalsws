@@ -1,6 +1,18 @@
 # Azure Databricks Fundamentals Workshop (adbfundamentalsws)
 Use this repo for the Azure Databricks Fundamentals Workshop
 
+Sections:
+
+[Step 1 Login to Azure Lab Services](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-1-login-to-azure-lab-services)
+
+[Step 2 Data Engineering](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-2-data-engineering)
+
+[Step 3 Data Analysis](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-3-data-analysis)
+
+[Step 4 Introducing Microsoft Fabric](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-4-introducing-microsoft-fabric)
+
+[Step 5 Data Science Simple Starter](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-5-data-science-simple-starter)
+
 ## Step 1 Login to Azure Lab Services 
 
 Here you will to register, start, and login to your Windows 11 desktop that you will use during the workshop.
