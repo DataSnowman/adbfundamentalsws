@@ -13,7 +13,7 @@ you may be using a organization similar to this `@MngEnvMCAP004660.onmicrosoft.c
 
 Enter your userid and click Next
 
-![labsingin](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/labsingin.png)
+![labsignin](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/labsignin.png)
 
 Enter your password and click Sign in
 
