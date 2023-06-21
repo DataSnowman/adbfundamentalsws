@@ -103,7 +103,7 @@ Go into your Workspace in Databricks and navigate to the three dots to the right
 
 ![import](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/import.png)
 
-Click on browse and navigate to where you cloned or downloaded the zip of the repo and select the users.dbc file and click open
+Click on browse and navigate to where you cloned or downloaded the zip of the repo and select the dataengineering.dbc file and click Open
 
 ![usersdbc](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/usersdbc.png)
 
@@ -111,7 +111,7 @@ Click Import
 
 ![clickimport](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/clickimport.png)
 
-Open the users file and you should see these two notebooks
+Open the dataengineering folder and you should see these two notebooks
 
 ![notobooks](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/notobooks.png)
 
