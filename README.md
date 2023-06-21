@@ -328,6 +328,6 @@ Open the dataengineering folder and you should see these the new notebook.  You 
 
 ![diabetesnotebook](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesnotebook.png)
 
-Open the first notebook LoadCMSFiles
+Open the diabetesmlmodel notebook
 
 ![loaddiabetes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loaddiabetes.png)
