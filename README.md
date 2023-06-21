@@ -307,3 +307,27 @@ You now should have the following 3 tables in your Lakehouse:
 
 ### Explore the Warehouse SQL Endpoint
 
+
+
+
+## Step 5 Data Science Simple Starter
+
+Go into your Workspace in Databricks and navigate to the three dots to the right of your username and select import
+
+![import](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/import.png)
+
+Click on browse and navigate to where you cloned or downloaded the zip of the repo and select the diabetesmlmodel.ipynb file and click Open
+
+![diabetesipynb](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesipynb.png)
+
+Click Import
+
+![importdiabetes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/importdiabetes.png)
+
+Open the dataengineering folder and you should see these the new notebook.  You could of also created a new folder in you Databricks workspace call datascience and import the notebook into that folder.
+
+![diabetesnotebook](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesnotebook.png)
+
+Open the first notebook LoadCMSFiles
+
+![loaddiabetes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loaddiabetes.png)
