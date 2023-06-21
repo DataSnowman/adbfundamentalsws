@@ -316,9 +316,9 @@ Go into your Workspace in Databricks and navigate to the three dots to the right
 
 ![import](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/import.png)
 
-Click on browse and navigate to where you cloned or downloaded the zip of the repo and select the diabetesmlmodel.ipynb file and click Open
+Click on browse and navigate to where you cloned or downloaded the zip of the repo and select the diabetesmlmodel.dbc file and click Open
 
-![diabetesipynb](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesipynb.png)
+![diabetesdbc](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesdbc.png)
 
 Click Import
 
@@ -331,3 +331,13 @@ Open the dataengineering folder and you should see these the new notebook.  You 
 Open the diabetesmlmodel notebook
 
 ![loaddiabetes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loaddiabetes.png)
+
+In the first cell modify the uncomment (remove the #) last item so it is your username
+
+user = "<yourusername>"
+
+example would be usereighteen
+
+![moduser18](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/moduser18.png)
+
+`IMPORTANT` Let review what is going on in the notebook and please run one cell at a time
