@@ -7,11 +7,11 @@ Sections:
 
 [Step 2 Data Engineering](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-2-data-engineering)
 
-[Step 3 Data Analysis](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-3-data-analysis)
+[Step 3 Data Science Simple Starter](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-3-data-science-simple-starter)
 
-[Step 4 Introducing Microsoft Fabric](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-4-introducing-microsoft-fabric)
+[Step 4 Data Analysis](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-4-data-analysis)
 
-[Step 5 Data Science Simple Starter](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-5-data-science-simple-starter)
+[Step 5 Introducing Microsoft Fabric](https://github.com/DataSnowman/adbfundamentalsws/tree/main#step-5-introducing-microsoft-fabric)
 
 ## Step 1 Login to Azure Lab Services 
 
@@ -181,7 +181,41 @@ The output of the notebook will be in gold folder in the Silver container
 
 ![gold](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/gold.png)
 
-## Step 3 Data Analysis
+
+## Step 3 Data Science Simple Starter
+
+Go into your Workspace in Databricks and navigate to the three dots to the right of your username and select import
+
+![import](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/import.png)
+
+Click on browse and navigate to where you cloned or downloaded the zip of the repo and select the diabetesmlmodel.dbc file and click Open
+
+![diabetesdbc](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesdbc.png)
+
+Click Import
+
+![importdiabetes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/importdiabetes.png)
+
+Open the dataengineering folder and you should see these the new notebook.  You could of also created a new folder in you Databricks workspace call datascience and import the notebook into that folder.
+
+![diabetesnotebook](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesnotebook.png)
+
+Open the diabetesmlmodel notebook
+
+![loaddiabetes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loaddiabetes.png)
+
+In the first cell modify the uncomment (remove the #) last item so it is your username
+
+user = "<yourusername>"
+
+example would be usereighteen
+
+![moduser18](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/moduser18.png)
+
+`IMPORTANT` Let review what is going on in the notebook and please run one cell at a time
+
+
+## Step 4 Data Analysis
 
 Navigate to the SQL Editor in the Left Nav
 
@@ -224,7 +258,8 @@ Start Building a Power BI Report
 
 ![pbireport](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/pbireport.png)
 
-## Step 4 Introducing Microsoft Fabric
+
+## Step 5 Introducing Microsoft Fabric
 
 Now we are going to connect to the Delta tables we just created in the workshop by creating a Shortcut to the Delta files in Azure Data Lake Storage Gen2 using Microsoft Fabric.
 
@@ -322,34 +357,3 @@ You now should have the following 3 tables in your Lakehouse:
 
 
 
-## Step 5 Data Science Simple Starter
-
-Go into your Workspace in Databricks and navigate to the three dots to the right of your username and select import
-
-![import](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/import.png)
-
-Click on browse and navigate to where you cloned or downloaded the zip of the repo and select the diabetesmlmodel.dbc file and click Open
-
-![diabetesdbc](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesdbc.png)
-
-Click Import
-
-![importdiabetes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/importdiabetes.png)
-
-Open the dataengineering folder and you should see these the new notebook.  You could of also created a new folder in you Databricks workspace call datascience and import the notebook into that folder.
-
-![diabetesnotebook](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/diabetesnotebook.png)
-
-Open the diabetesmlmodel notebook
-
-![loaddiabetes](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loaddiabetes.png)
-
-In the first cell modify the uncomment (remove the #) last item so it is your username
-
-user = "<yourusername>"
-
-example would be usereighteen
-
-![moduser18](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/moduser18.png)
-
-`IMPORTANT` Let review what is going on in the notebook and please run one cell at a time
