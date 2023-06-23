@@ -426,8 +426,110 @@ You now should have the following 3 tables in your Lakehouse:
 
 ![goldschema](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/goldschema.png)
 
-### Explore the Warehouse SQL Endpoint
+### Explore the SQL Endpoint
+
+While you are in your lakehouse you can go to the top right corner and switch to the SQL Endpoint
+
+![sqlep](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/sqlep.png)
+
+You now should be in the Home screen of the SQL Endpoint
+
+![sqlephome](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/sqlephome.png)
+
+Click on New SQL query and try some SQL statements.  These are T-SQL queries like you would run in SQL Server, but you are querying the Delta tables you created shortcuts to in your Lakehouse.
+
+```
+SELECT count(*)
+FROM [medicarereports].[dbo].[medicareinpatientproviderfact]
+```
+
+```
+SELECT year, count(twodigityear) as records from MedicareInpatientHospitalsByProviderAndService group by year
+```
+
+```
+select [Rndrng_Prvdr_CCN],[Rndrng_Prvdr_Org_Name], sum(Tot_Dschrgs) AS Discharges from medicareinpatienthospitals where [Rndrng_Prvdr_Org_Name] like ('%Upmc%') group by [Rndrng_Prvdr_CCN], [Rndrng_Prvdr_Org_Name] order by Discharges desc
+```
+
+This last query was used to create a list of UPMC hospitals.  We will now use a csv of that list to create a personal Delta table back in our Lakehouse.
+
+### Back to the Lakehouse
+
+Go to the top right corner and switch to the Lakehouse
+
+![sqlep](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/sqlep.png)
+
+Click on the three dots next to Files and click New subfolder
+
+![newsubfld](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/newsubfld.png)
+
+Name the Subfolder csv
+
+![newsfcreate](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/newsfcreate.png)
+
+Click on the three dots next to the new csv subfolder you just created.  Click Upload>Upload files.
+
+![upload](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/upload.png)
+
+Click on the fold icon in the dropdown. Navigate to the `upmchospitals.csv` that was downloaded by your clone or download of this GitRepo.  Click Open.  Click Upload.
+
+![uploadfiles](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/uploadfiles.png)
+
+Click the x in the top right corner
+
+![clickx](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/clickx.png)
+
+The uploaded csv should now be in the csv subfolder
+
+![csvsub](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/csvsub.png)
+
+Right click on the three dot by the csv file and select Load to Tables
+
+![loadtotables](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/loadtotables.png)
+
+Go with the default name and click Confirm
+
+This process creates a new Delta table in the Lakehouse from the csv in Files.  This also works with Parquet files.
+
+![csvtodelta](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/csvtodelta.png)
+
+### Back to the SQL Endpoint
+
+Go to the top right corner and switch to the SQL Endpoint
+
+![sqlep](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/sqlep.png)
+
+You now should be in the Home screen of the SQL Endpoint
+
+![sqlephome](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/sqlephome.png)
+
+Click on Model on the bottom of the UI
+
+![model](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/model.png)
+
+Create the joins between:
+
+```
+medicareinpatientfact Rndrng_Prvdr_CNN and the upmchospitals Rndrng_Prvdr_CNN
+```
+
+```
+medicareinpatientfact DRG_Cd and the drgdim DRG_Cd
+```
+
+```
+medicareinpatientfact twodigityear and the datedim twodigityear
+```
+
+### Create a New Power BI report
+
+You are now ready to build a Power BI report
+
+Click New report on the top bar above the Model
+
+Build a simple PBI report
+
+![fabricpbireport](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/fabricpbireport.png)
 
 
-
-
+## Congrats you have finished the workshop!
