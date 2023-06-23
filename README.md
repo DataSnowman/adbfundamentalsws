@@ -338,27 +338,37 @@ Click on Synapse Data Engineering
 
 ![synapsede](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/synapsede.png)
 
-Create a workspace if one is not already created.  Click on Workspaces on the left nav.
+Find your workspace by clicking on Workspaces on the left nav.
 
 ![workspaces](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/workspaces.png)
 
-Click on +New workspace which opens a dialog. 
+Your workspace should look like this:
 
-![newws](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/newws.png)
+![yourws](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/yourws.png)
 
-I called mine workshop
+Your will either be in `NC Databricks Workshop 1-9`
 
-![workspace](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/workspace.png)
+![ncdw1-9](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/ncdw1-9.png)
 
-### Create a Lakehouse
+Or `NC Databricks Workshop 10-18`
+
+![ncdw10-18](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/ncdw10-18.png)
+
+### Create a Lakehouse of your own
 
 Create a Lakehouse by clicking on +New and chosing Lakehouse. Lakehouse (Preview) while still in public preview
 
 ![lakehouse](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/lakehouse.png)
 
-I called mine `medicare`.  Click Create
+As we have been doing all day please name it `user<number>`.  Click Create
 
-![medicare](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/medicare.png)
+An examlpe would be "userone", "Usertwo", etc
+
+![useronelh](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/useronelh.png)
+
+You should now have an empty Lakehouse that looks something like this: 
+
+![yourlh](https://raw.githubusercontent.com/datasnowman/adbfundamentalsws/main/images/yourlh.png)
 
 Click on New shortcut
 
@@ -401,7 +411,8 @@ Then click Next
 In the Shortcut setting enter the Shortcut name (the name of the folder which represents the delta table for example) and the Subpath.  Something like this:
 
 ```
-/silver/cms/MedicareInpatientHospitalsByProviderAndService/userone1/gold/medicareinpatientfact
+Shortcut Name: medicareinpatientfact 
+URL: /silver/cms/MedicareInpatientHospitalsByProviderAndService/userone/gold/medicareinpatientfact
 ```
 The path for your folder will vary
 
@@ -409,7 +420,7 @@ The path for your folder will vary
 
 Click Create
 
-Now create shortcuts for the data and drg tables using the same process.  The Storage URL will be the same as above and the Subpath will just need the last folder name changed.
+Now create shortcuts for the data and drg tables using the same process.  The Storage URL will be the same as above and each Subpath will just need the last folder name changed.
 
 You now should have the following 3 tables in your Lakehouse:
 
